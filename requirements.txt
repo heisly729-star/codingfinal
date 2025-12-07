@@ -1,4 +1,7 @@
 streamlit
 firebase-admin
+firebase-rest-api
 streamlit-drawable-canvas
 Pillow
+pandas
+plotly
