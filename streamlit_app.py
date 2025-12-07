@@ -342,8 +342,26 @@ def teacher_mode(db, bucket, teacher_email):
 
 def login_page():
     """로그인 페이지"""
+    st.set_page_config(
+        page_title="학생 정서 모니터링",
+        page_icon="🎨",
+        layout="wide"
+    )
+    
     st.title("🎨 학생 정서 모니터링 시스템")
     st.write("학생 또는 교사로 입장해주세요.")
+    
+    st.markdown("""
+    <style>
+    .stButton button {
+        height: 120px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    
+    st.markdown("<br>", unsafe_allow_html=True)
     
     col1, col2 = st.columns(2)
     
